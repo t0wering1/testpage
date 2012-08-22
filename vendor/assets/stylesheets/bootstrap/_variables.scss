@@ -31,8 +31,8 @@ $pink:                  #c3325f !default;
 $purple:                #7a43b6 !default;
 
 // Typography
-$baseFontSize:          13px !default;
-$baseFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$baseFontSize:          15px !default;
+$baseFontFamily:        "Arial Black", Helvetica, Arial, sans-serif !default;
 $baseLineHeight:        18px !default;
 $textColor:             $grayDark !default;
 
@@ -59,12 +59,12 @@ $placeholderText:       $grayLight !default;
 
 // Navbar
 $navbarHeight:                    40px !default;
-$navbarBackground:                $Black !default;
+$navbarBackground:                $black !default;
 $navbarBackgroundHighlight:       $grayDark !default;
 
 $navbarText:                      $white !default;
 $navbarLinkColor:                 $white !default;
-$navbarLinkColorHover:            $white !default;
+$navbarLinkColorHover:            $grayLighter !default;
 
 // Form states and alerts
 $warningText:             #c09853 !default;

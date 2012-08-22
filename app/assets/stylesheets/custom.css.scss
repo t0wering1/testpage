@@ -13,11 +13,10 @@ $grayMediumLight: #eaeaea;
 #logo{
 	float: left;
 	margin-right: 10px;
-	font-size: 1.7em;
-	font-family: "Arial Black"
+	font-size: 1.6em;
 	color: #fff;
 	letter-spacing: -1px;
-	padding-top 9px;
+	padding-top: 9px;
 	line-height: 1;
 }
 
@@ -29,10 +28,17 @@ $grayMediumLight: #eaeaea;
 /* footer */
 
 footer{
+	font-size: 40%;
+	text-align: center;
+	position: fixed;
+	margin: 0 auto;
+	bottom: 0px;
+    height: 7.8%;
+    width: 100%;
 	margin-top: 45px;
 	padding-top: 5px;
-	border-top: 1px solid #eaeaea;
 	color: #999;
+
 }
 
 footer a{
@@ -49,11 +55,19 @@ footer small{
 
 footer ul{
 	float: right;
+	margin-right: 0px;
 	list-style: none;
+	width:100%;
+
+
 }
 
 footer ul li{
-	float: left;
-	margin-left: 10px;
+	display: inline-block;
+	text-align: center;
+ 	margin-left: 0px;
+ 	padding-left: 10px;
+ 	padding-right: 10px;
 }
+
 

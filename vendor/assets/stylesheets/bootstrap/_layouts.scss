@@ -7,6 +7,16 @@
 // Container (centered, fixed-width layouts)
 .container {
   @include container-fixed();
+  width: 96%;
+}
+
+
+.footcontainer{
+	@include container-fixed();
+	width: 94%;
+	border-top: 1px solid #eaeaea;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 // Fluid layouts (left aligned, with sidebar, min- & max-width content)
