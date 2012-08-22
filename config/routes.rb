@@ -1,4 +1,12 @@
 Testpage::Application.routes.draw do
+  get "nom/home"
+
+  get "nom/help"
+
+  get "nom/about"
+
+  get "nom/test"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
