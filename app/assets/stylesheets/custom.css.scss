@@ -70,4 +70,37 @@ footer ul li{
  	padding-right: 10px;
 }
 
+/* popup stuff */
+
+#mask {
+	position:absolute;
+	z-index: 9000;
+	background-color: #000;
+	display: none;
+}
+
+#boxes .window{
+	position:fixed;
+	width: 440px;
+	height: 200px;
+	display: none;
+	z-index:9999;
+	padding: 20px;
+}
+
+#boxes #dialog {
+	width: 375px;
+	height:203px;
+}
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+	border: 1px solid #bbb;
+	width: 100%;
+	padding: 10px;
+	height: auto;
+	margin-bottom: 15px;
+	@include box_sizing;
+}
 

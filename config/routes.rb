@@ -1,10 +1,19 @@
 Testpage::Application.routes.draw do
+  get "users/new"
+  root to: 'nom#home'
+  resources :users
+  resources :sessions, only: [:new, :create, :destroy]
+
+  match '/signup', to: 'users#new'
+  match '/signin', to: 'sessions#new'
+  match '/signout', to: 'sessinos#destroy', via: :delete
+
+
+  get "users/edit"
+  get "users/show"
   get "nom/home"
-
   get "nom/help"
-
   get "nom/about"
-
   get "nom/test"
 
   # The priority is based upon order of creation:
