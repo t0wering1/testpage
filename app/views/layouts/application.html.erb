@@ -4,7 +4,6 @@
   <title>FOOODit.com | <%= yield(:title) %></title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "jquery", "application" %>
-
   <%= csrf_meta_tags %>
   <%= render 'layouts/shim' %>
 </head>
@@ -19,6 +18,7 @@
 		<% end %>
 		<% yield %>
 		<%= render 'layouts/footer' %>
+		<%= debug(params) if Rails.env.development? %>
 	</div>
 </div>
 </body>
