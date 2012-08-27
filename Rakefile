@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Testpage::Application.load_tasks
+Signup::Application.load_tasks

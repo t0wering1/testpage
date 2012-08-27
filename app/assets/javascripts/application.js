@@ -12,6 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require modals
-//= require bootstrap
+//= requrie bootstrap
+//= require bootstrap-dropdown
+//= require jquery.facebox
 //= require_tree .
+jQuery(document).ready(function($){
+	$('a[rel*=signuplink]').facebox()
+
+});

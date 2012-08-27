@@ -1,21 +1,10 @@
-Testpage::Application.routes.draw do
-  get "users/new"
-  root to: 'nom#home'
-  resources :users
-  resources :sessions, only: [:new, :create, :destroy]
+Signup::Application.routes.draw do
 
-  match '/signup', to: 'users#new'
-  match '/signin', to: 'sessions#new'
-  match '/signout', to: 'sessinos#destroy', via: :delete
+  get "nom/testpage"
 
+  devise_for :users, :sign_out_via => [ :post, :delete ]
 
-  get "users/edit"
-  get "users/show"
-  get "nom/home"
-  get "nom/help"
-  get "nom/about"
-  get "nom/test"
-
+  root :to => "nom#testpage"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
