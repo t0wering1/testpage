@@ -17,6 +17,13 @@
 //= require jquery.facebox
 //= require_tree .
 jQuery(document).ready(function($){
-	$('a[rel*=signuplink]').facebox()
+	$('#start').click(function(){
+		jQuery.facebox({div:'#signup'});
+		$('.find').click(function(){
+			var glink = $(this).attr('href');
+			jQuery.facebox({div: glink});
+			return flase;
+		});
+	});
 
 });
