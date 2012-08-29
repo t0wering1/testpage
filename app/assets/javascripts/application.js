@@ -16,14 +16,18 @@
 //= require bootstrap-dropdown
 //= require jquery.facebox
 //= require_tree .
-jQuery(document).ready(function($){
-	$('#start').click(function(){
-		jQuery.facebox({div:'#signup'});
-		$('.find').click(function(){
-			var glink = $(this).attr('href');
-			jQuery.facebox({div: glink});
-			return flase;
-		});
-	});
-
-});
+function find_hidden(){  
+        $('.infinite-find')  
+        .unbind('click')  
+        .bind('click', function() {  
+                var glink = $(this).attr('href');  
+                jQuery.facebox({div: glink});  
+                find_hidden();  
+        });  
+}  
+  
+jQuery(document).ready(function($){  
+//infinite find - really stick in facebox  
+        find_hidden();  
+  
+})  
