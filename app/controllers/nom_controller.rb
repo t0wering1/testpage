@@ -1,4 +1,13 @@
 class NomController < ApplicationController
-  def testpage
+  def home
+  end
+
+  def help
+  end
+
+  def about
+  end
+
+  def test
   end
 end
