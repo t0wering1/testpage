@@ -1,0 +1,17 @@
+
+  <%= form_for(User.new) do |f| %>
+  
+  <%= f.text_field :name,:validate => true, :required => true , :pattern => "[0-9a-zA-Z_\-]{6,}", :placeholder => "Name" %>
+  <div>
+  <%= f.email_field :email,:validate => true, :required => true ,:placeholder => "Email" %></div>
+
+  <div>
+  <%= f.password_field :password, :validate => true ,:required => true , :placeholder => "Password" %></div>
+
+  <div>
+  <%= f.password_field :password_confirmation, :required => true ,:validate => true, :placeholder => "Password Confirmation" %></div>
+
+  <div><%= f.submit "Sign up" %></div>
+  <h3><%= link_to "<<back","#signin", :class =>"infinite-find"%><h3>
+<% end %>
+ 

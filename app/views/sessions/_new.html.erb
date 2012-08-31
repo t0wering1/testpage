@@ -1,0 +1,10 @@
+<%= form_for(:session, url: sessions_path) do |f| %>
+  <div>
+  <%= f.email_field :email, :placeholder => "Email" %></div>
+
+  <div>
+  <%= f.password_field :password, :placeholder => "Password" %></div>
+
+  <div><%= f.submit "Sign in" %></div>
+  <h3><%= link_to "Signup","#signup", :remote =>true, :class =>"infinite-find"%><h3>
+<% end %>

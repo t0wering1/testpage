@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.tools.min
 //= requrie bootstrap
 //= require bootstrap-dropdown
 //= require jquery.facebox
@@ -31,3 +32,5 @@ jQuery(document).ready(function($){
         find_hidden();  
   
 })  
+
+$("form").validator(); 
