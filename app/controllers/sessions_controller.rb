@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+	  layout "sforms"
   def new
  
   end

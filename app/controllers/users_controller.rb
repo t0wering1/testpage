@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  layout "sforms"
   def new
     
   	@user = User.new

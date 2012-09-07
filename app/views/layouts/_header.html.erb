@@ -8,18 +8,7 @@
 					<li><%= link_to "Sign out", signout_path, :method => :delete %></li>
 				<% else %>
 
-				<li><%= link_to "Sign in","#signin", :remote =>true, :validate => true, :class =>"infinite-find"%></li>
-				
-
-				<div class = "hidden" id = "signup">
-					<h1>Sign up</h1><br /> 
-					<%= render "users/new" %>
-				</div>
-
-				<div class = "hidden" id = "signin">
-					<h1>Sign in </h1><br /> 
-					<%= render "sessions/new" %>
-				</div>
+				<li><%= link_to "Sign in",signin_path, :remote =>true, :validate => true, :rel =>"stuff", :rev =>"iframe|350" %></li>
 				
 				<% end %>
 				</ul>
