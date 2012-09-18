@@ -8,6 +8,6 @@
   <%= f.password_field :password, :placeholder => "Password" %></div>
 
   <div><%= f.submit "Sign in" %></div>
-<%= link_to "Sign up","users/new.html", :remote =>true, :validate => true, :rel => "stuff" %>
+<%= link_to "Sign up",signup_path, :remote =>true, :validate => true, :rel => "stuff" %>
 <% end %>
 </div>

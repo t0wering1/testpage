@@ -8,6 +8,9 @@ class NomController < ApplicationController
   def about
   end
 
+  def show
+  end 
+  
   def test
   end
 end

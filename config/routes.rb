@@ -1,16 +1,19 @@
 Testpage::Application.routes.draw do
+  get "noms/new"
+
+  get "r/new"
+
 	resources :users
 	resources :sessions, only: [:new, :create, :destroy]
-	root to: 'nom#home'
+	resources :noms
+  resources :nom
+  root to: 'noms#new'
   get "users/new"
-  get "sessinos/new"
-  get "nom/home"
-  get "nom/help"
-  get "nom/about"
-  get "nom/test"
+  get "sessions/new"
+
   
   match '/signup',  to: 'users#new'
   match '/signin',  to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
- 
+  match '/register', to: 'noms#new' 
 end

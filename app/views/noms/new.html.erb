@@ -1,0 +1,68 @@
+<% provide(:title, 'New Restaurant') %>
+<h1> Restaurant Registration</h1>
+
+<%= form_for(@nom) do |f| %>
+<%= f.text_field :name, :placeholder => "Restaurant Name" %>
+<%= f.text_field :streetnum, :placeholder => "Street Number" %>
+<%= f.text_field :street, :placeholder => "Street" %>
+<%= f.text_field :city, :placeholder => "City" %>
+<%= f.select :state, ['AK',
+'AL',
+'AR',
+'AZ',
+'CA',
+'CO',
+'CT',
+'DC',
+'DE',
+'FL',
+'GA',
+'HI',
+'IA',
+'ID',
+'IL',
+'IN',
+'KS',
+'KY',
+'LA',
+'MA',
+'MD',
+'ME',
+'MI',
+'MN',
+'MO',
+'MS',
+'MT',
+'NC',
+'ND',
+'NE',
+'NH',
+'NJ',
+'NM',
+'NV',
+'NY',
+'OH',
+'OK',
+'OR',
+'PA',
+'RI',
+'SC',
+'SD',
+'TN',
+'TX',
+'UT',
+'VA',
+'VT',
+'WA',
+'WI',
+'WV',
+'WY'], 
+:include_blank => 'State' %>
+<%= f.text_field :zip, :placeholder => "Zip Code" %>
+<%= f.text_field :tele, :placeholder => "Telephone Number" %>
+<%= f.select :daysopen,['Monday','Tuesday','Wednesday', 'Thursday','Friday', 'Saturday','Sunday'],:include_blank => 'Day Open' %>
+<%= f.select :time,['1','2'],:include_blank => 'Time' %>
+<%= f.select :ampm,['am','pm'], :include_blank => 'am/pm' %>
+
+<%= f.submit "Register" %>
+<% end %>
